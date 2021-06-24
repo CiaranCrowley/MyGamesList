@@ -1,10 +1,10 @@
 import React from 'react'
-import { Dropdown, DropdownButton, Image, Nav, Navbar } from 'react-bootstrap'
+import { Dropdown, DropdownButton, Nav, Navbar } from 'react-bootstrap'
 import './SiteHeader.css'
 
 const SiteHeader = () => {
 	return (
-		<>
+		<div>
 			<Navbar expand="lg">
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
@@ -26,7 +26,7 @@ const SiteHeader = () => {
 					<Dropdown.Item>Your Lists</Dropdown.Item>
 				</DropdownButton>
 			</Navbar>
-		</>
+		</div>
 	)
 }
 

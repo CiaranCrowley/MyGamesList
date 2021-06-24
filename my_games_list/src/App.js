@@ -2,12 +2,15 @@ import React from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import './App.css'
 import SiteHeader from './components/siteHeader/SiteHeader'
+import GamesListTemplate from './components/gamesListTemplate/GamesListTemplate'
 
 function App() {
 	return (
 		<div className="jumbotron">
 			<SiteHeader />
-			<div className="container-fluid"></div>
+			<div className="container-fluid">
+				<GamesListTemplate />
+			</div>
 		</div>
 	)
 }
