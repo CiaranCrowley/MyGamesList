@@ -1,0 +1,17 @@
+.fixed-top {
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.nav {
+	background-color: #007bff;
+}
+
+.navbar {
+	padding-right: 20px;
+	background-color: #007bff;
+}
+
+.nav-link {
+	color: #000000;
+}
