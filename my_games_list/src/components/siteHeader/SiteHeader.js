@@ -1,28 +1,31 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container'
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import DropdownButton from 'react-bootstrap/DropdownButton'
-import Dropdown from 'react-bootstrap/Dropdown'
+import { Dropdown, DropdownButton, Image, Nav, Navbar } from 'react-bootstrap'
 import './SiteHeader.css'
 
 const SiteHeader = () => {
 	return (
 		<>
-			<Container fluid="md">
-				<Navbar expand="lg" bg="light" variant="light">
-					<Navbar.Toggle aria-controls="basic-navbar-nav" />
-					<Navbar.Collapse id="basic-navbar-nav">
-						<Nav className="mr-auto">
-							<DropdownButton id="ddown" title="Dropdown button">
-								<Dropdown.Item>Action</Dropdown.Item>
-								<Dropdown.Item>Another action</Dropdown.Item>
-								<Dropdown.Item>Something else</Dropdown.Item>
-							</DropdownButton>
-						</Nav>
-					</Navbar.Collapse>
-				</Navbar>
-			</Container>
+			<Navbar expand="lg">
+				<Navbar.Toggle aria-controls="basic-navbar-nav" />
+				<Navbar.Collapse id="basic-navbar-nav">
+					<Nav id="nav">
+						<Nav.Link>Home</Nav.Link>
+						<Nav.Link>New</Nav.Link>
+						<Nav.Link>Upcoming</Nav.Link>
+					</Nav>
+				</Navbar.Collapse>
+				<img
+					alt="1"
+					id="profileImg"
+					src="https://i.imgur.com/6vblQ1O.jpeg/"
+					width="50"
+					height="50"
+				/>
+				<DropdownButton id="d-down" title={<span>ACCOUNT NAME</span>}>
+					<Dropdown.Item>Profile</Dropdown.Item>
+					<Dropdown.Item>Your Lists</Dropdown.Item>
+				</DropdownButton>
+			</Navbar>
 		</>
 	)
 }
