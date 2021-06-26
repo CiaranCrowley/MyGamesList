@@ -1,8 +1,8 @@
 import React from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import './App.css'
-import SiteHeader from './components/siteHeader/SiteHeader'
-import GamesListTemplate from './components/gamesListTemplate/GamesListTemplate'
+import SiteHeader from './components/siteHeader'
+import GamesListTemplate from './components/gamesListTemplate'
 
 function App() {
 	return (
