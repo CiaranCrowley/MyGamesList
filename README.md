@@ -6,6 +6,7 @@
 
 > Checked means ongoing
 
+- [x] Site Header
 - [x] Authentication
 - [ ] DB Integration
 - [ ] List views of popular, new, ect. games
