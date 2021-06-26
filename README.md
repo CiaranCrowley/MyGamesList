@@ -2,6 +2,10 @@
 
 ## Check Lists
 
+### `In Progress`
+
+> Checked means ongoing
+
 - [x] Authentication
 - [ ] DB Integration
 - [ ] List views of popular, new, ect. games
