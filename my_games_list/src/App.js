@@ -1,17 +1,17 @@
 import React from 'react'
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
-import './App.css'
-import SiteHeader from './components/siteHeader'
-import GamesListTemplate from './components/gamesListTemplate'
+import Signup from './components/signUp'
+import { Container } from 'react-bootstrap'
 
 function App() {
 	return (
-		<div className="jumbotron">
-			<SiteHeader />
-			<div className="container-fluid">
-				<GamesListTemplate />
+		<Container
+			className="d-flex align-items-center justify-content-center"
+			style={{ minHeight: '100vh' }}
+		>
+			<div className="w-100" style={{ maxWidth: '400px' }}>
+				<Signup />
 			</div>
-		</div>
+		</Container>
 	)
 }
 
