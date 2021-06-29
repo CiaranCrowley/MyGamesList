@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
 // @ts-nocheck
 import React, { useRef, useState } from 'react'
-import { Button, Card, Form, Alert } from 'react-bootstrap'
-import { useAuth } from '../../contexts/AuthContext'
+import { Form, Button, Card, Alert } from 'react-bootstrap'
+import { useAuth } from '../contexts/AuthContext'
 import { Link, useHistory } from 'react-router-dom'
 
 export default function Signup() {
@@ -48,8 +47,8 @@ export default function Signup() {
 							<Form.Label>Password</Form.Label>
 							<Form.Control type="password" ref={passwordRef} required />
 						</Form.Group>
-						<Form.Group id="passwordConfirm">
-							<Form.Label>Confirm Password</Form.Label>
+						<Form.Group id="password-confirm">
+							<Form.Label>Password Confirmation</Form.Label>
 							<Form.Control
 								type="password"
 								ref={passwordConfirmRef}
@@ -61,10 +60,10 @@ export default function Signup() {
 						</Button>
 					</Form>
 				</Card.Body>
-				<div className="w-100 text-center mt-2">
-					Already have an account?
-				</div>
 			</Card>
+			<div className="w-100 text-center mt-2">
+				Already have an account? <Link to="/login">Log In</Link>
+			</div>
 		</>
 	)
 }

@@ -1,6 +1,5 @@
-// @ts-nocheck
 import React, { useContext, useState, useEffect } from 'react'
-import { auth } from '../firebase_config'
+import { auth } from '../firebase'
 
 const AuthContext = React.createContext()
 
@@ -51,8 +50,8 @@ export function AuthProvider({ children }) {
 		signup,
 		logout,
 		resetPassword,
-		updatePassword,
 		updateEmail,
+		updatePassword,
 	}
 
 	return (
