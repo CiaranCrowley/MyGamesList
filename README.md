@@ -6,13 +6,14 @@
 
 > Checked means ongoing
 
-- [x] Site Header
-- [x] Authentication (Look into SHA1 settings on Google Sign in Option in Sign-in Methods on Firebase)
-- [] DB Integration
-- [] List views of popular, new, ect. games
-- [] User can add games to lists
-- [] User can record start and end dates, hours played, score, ect.
-- [] Firebase Hosting?
+-  [x] Site Header
+-  [x] Authentication (Look into SHA1 settings on Google Sign in Option in Sign-in Methods on Firebase)
+-  [x] Sign up, Login, email and password reset, ect, all set up
+-  [] DB Integration
+-  [] List views of popular, new, ect. games
+-  [] User can add games to lists
+-  [] User can record start and end dates, hours played, score, ect.
+-  [] Firebase Hosting?
 
 ## Purpose
 
