@@ -1,22 +1,22 @@
 import React from 'react'
 import { Container } from 'react-bootstrap'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import { AuthProvider } from '../contexts/AuthContext'
-import Dashboard from './Dashboard'
-import ForgotPassword from './ForgotPassword.js'
-import Login from './Login'
-import PrivateRoute from './PrivateRoute'
-import Signup from './Signup'
-import UpdateProfile from './UpdateProfile'
-import SiteHeader from './siteHeader/siteHeader'
+import { AuthProvider } from './contexts/AuthContext'
+import Dashboard from './components/Dashboard'
+import ForgotPassword from './components/ForgotPassword.js'
+import Login from './components/Login'
+import PrivateRoute from './components/PrivateRoute'
+import Signup from './components/Signup'
+import UpdateProfile from './components/UpdateProfile'
 
 function App() {
 	return (
-		<Container
-			className="d-flex align-items-center justify-content-center"
-			style={{ minHeight: '100vh' }}
-		>
-			<div className="w-100" style={{ maxWidth: '400px' }}>
+		<div>
+			<Container
+			// className="d-flex align-items-center justify-content-center"
+			// style={{ minHeight: '100vh' }}
+			>
+				{/* <div className="w-100" style={{ maxWidth: '400px' }}> */}
 				<Router>
 					<AuthProvider>
 						<Switch>
@@ -34,8 +34,9 @@ function App() {
 						</Switch>
 					</AuthProvider>
 				</Router>
-			</div>
-		</Container>
+				{/* </div> */}
+			</Container>
+		</div>
 	)
 }
 
