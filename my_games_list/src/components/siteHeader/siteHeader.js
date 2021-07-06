@@ -1,8 +1,13 @@
+// @ts-nocheck
 import React from 'react'
 import { Dropdown, DropdownButton, Nav, Navbar } from 'react-bootstrap'
 import './SiteHeader.css'
+// import { AuthContext } from '../../contexts/AuthContext'
 
 const SiteHeader = () => {
+	// const user = AuthContext.currentUser
+	const user = ''
+
 	return (
 		<div>
 			<Navbar expand="lg">
@@ -21,7 +26,7 @@ const SiteHeader = () => {
 					width="50"
 					height="50"
 				/>
-				<DropdownButton id="d-down" title={<span>ACCOUNT NAME</span>}>
+				<DropdownButton id="d-down" title={<span>{user}</span>}>
 					<Dropdown.Item>Profile</Dropdown.Item>
 					<Dropdown.Item>Your Lists</Dropdown.Item>
 				</DropdownButton>

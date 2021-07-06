@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import { Card, Button, Alert, Container } from 'react-bootstrap'
-import { useAuth } from '../contexts/AuthContext'
+import { Alert, Button, Card, Container } from 'react-bootstrap'
 import { Link, useHistory } from 'react-router-dom'
+import { useAuth } from '../contexts/AuthContext'
+import SiteHeader from './siteHeader/siteHeader'
 
 export default function Dashboard() {
 	const [error, setError] = useState('')
@@ -21,6 +22,7 @@ export default function Dashboard() {
 
 	return (
 		<>
+			<SiteHeader />
 			<Container
 				className="d-flex align-items-center justify-content-center"
 				style={{ minHeight: '100vh' }}
