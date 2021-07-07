@@ -1,12 +1,11 @@
 // @ts-nocheck
 import React from 'react'
 import { Dropdown, DropdownButton, Nav, Navbar } from 'react-bootstrap'
+import { auth } from '../../firebase'
 import './SiteHeader.css'
-// import { AuthContext } from '../../contexts/AuthContext'
 
 const SiteHeader = () => {
-	// const user = AuthContext.currentUser
-	const user = ''
+	const user = auth.currentUser.email
 
 	return (
 		<div>
