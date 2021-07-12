@@ -8,6 +8,7 @@ import Login from './components/login/Login'
 import PrivateRoute from './components/PrivateRoute'
 import Signup from './components/signUp/Signup'
 import UpdateProfile from './components/UpdateProfile'
+import Home from './pages/homePage'
 
 function App() {
 	return (
@@ -23,6 +24,7 @@ function App() {
 							/>
 							<Route path="/signup" component={Signup} />
 							<Route path="/login" component={Login} />
+							<Route exact path="/home" component={Home} />
 							<Route
 								path="/forgot-password"
 								component={ForgotPassword}
