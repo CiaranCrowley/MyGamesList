@@ -8,7 +8,9 @@ import Login from './components/login/Login'
 import PrivateRoute from './components/PrivateRoute'
 import Signup from './components/signUp/Signup'
 import UpdateProfile from './components/UpdateProfile'
-import Home from './pages/homePage'
+import Home from './pages/home/homePage'
+import NewGames from './pages/new/newGames'
+import UpcomingGames from './pages/upcoming/upcomingGames'
 
 function App() {
 	return (
@@ -17,14 +19,24 @@ function App() {
 				<Router>
 					<AuthProvider>
 						<Switch>
-							<PrivateRoute exact path="/" component={Dashboard} />
+							<PrivateRoute
+								exact
+								path="/dashboard"
+								component={Dashboard}
+							/>
 							<PrivateRoute
 								path="/update-profile"
 								component={UpdateProfile}
 							/>
-							<Route path="/signup" component={Signup} />
-							<Route path="/login" component={Login} />
-							<Route exact path="/home" component={Home} />
+							<Route exact path="/signup" component={Signup} />
+							<Route exact path="/login" component={Login} />
+							<Route exact path="/" component={Home} />
+							<Route exact path="/newGames" component={NewGames} />
+							<Route
+								exact
+								path="/popularGames"
+								component={UpcomingGames}
+							/>
 							<Route
 								path="/forgot-password"
 								component={ForgotPassword}

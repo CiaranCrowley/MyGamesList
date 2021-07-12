@@ -12,11 +12,15 @@ const SiteHeader = () => {
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav id="nav">
-						<Nav.Link as={Link} to="/home">
+						<Nav.Link as={Link} to="/">
 							Home
 						</Nav.Link>
-						<Nav.Link>New</Nav.Link>
-						<Nav.Link>Upcoming</Nav.Link>
+						<Nav.Link as={Link} to="/newGames">
+							New
+						</Nav.Link>
+						<Nav.Link as={Link} to="/popularGames">
+							Upcoming
+						</Nav.Link>
 					</Nav>
 				</Navbar.Collapse>
 				<img
@@ -30,7 +34,7 @@ const SiteHeader = () => {
 					id="d-down"
 					title={<span>{auth.currentUser.email}</span>}
 				>
-					<Dropdown.Item as={Link} to="/home">
+					<Dropdown.Item as={Link} to="/dashboard">
 						Profile
 					</Dropdown.Item>
 					<Dropdown.Item>Your Lists</Dropdown.Item>
