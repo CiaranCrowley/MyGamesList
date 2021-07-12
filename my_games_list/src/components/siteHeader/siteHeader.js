@@ -6,6 +6,10 @@ import { auth } from '../../firebase'
 import './SiteHeader.css'
 
 const SiteHeader = () => {
+	/**
+	 * ? If user is not logged in, clicking dropdown button will be hidden and replaced with a login button.
+	 * ? If user is logged in, show normal dropdown button
+	 */
 	return (
 		<div>
 			<Navbar expand="lg">
